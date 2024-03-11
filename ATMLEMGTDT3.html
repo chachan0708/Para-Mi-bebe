@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestras Foticos</title>
+<style>
+
+    body {
+        background-color: pink;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        overflow: hidden; /* Evita barras de desplazamiento */
+    }
+    .imagen {
+        position: absolute;
+        width: 200px; /* Ancho de las imágenes */
+
+    }
+</style>
+</head>
+<body>
+
+ <h1>TE AMO MI AMORCITO</h1>
+
+<script>
+
+   
+
+    function crearImagenesAleatorias() {
+        // Array de rutas de imágenes
+        var imagenes = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg", "imagen4.jpg", "imagen5.jpg", "imagen6.jpg", "imagen7.jpg", "imagen8.jpg", "imagen9.jpg", "imagen10.jpg", "imagen11.jpg"]; // Agrega más rutas de imágenes si es necesario
+        
+        // Recorrer el array y crear imágenes
+        imagenes.forEach(function(imagen) {
+            var nuevaImagen = document.createElement("img");
+            nuevaImagen.src = imagen;
+            nuevaImagen.className = "imagen";
+            
+            // Establecer posiciones aleatorias
+            nuevaImagen.style.left = Math.random() * (window.innerWidth - 100) + "px"; // Ancho de la ventana - ancho de la imagen
+            nuevaImagen.style.top = Math.random() * (window.innerHeight - 100) + "px"; // Alto de la ventana - alto de la imagen
+            
+            document.body.appendChild(nuevaImagen); // Agregar imagen al cuerpo del documento
+        });
+    }
+
+    // Llamar a la función al cargar la página
+    window.onload = crearImagenesAleatorias;
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Te Amoooooo Mi Amor</title>
+<style>
+
+    body {
+        background-color: pink;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        overflow: hidden; /* Evita barras de desplazamiento */
+    }
+    .imagen {
+        position: absolute;
+        width: 200px; /* Ancho de las imágenes */
+
+    }
+</style>
+</head>
+<body>
+
+ <h1>TE AMO MI AMORCITO</h1>
+
+<script>
+
+   
+
+    function crearImagenesAleatorias() {
+        // Array de rutas de imágenes
+        var imagenes = ["https://i.pinimg.com/originals/56/c4/5a/56c45aafba57500259b204581192a79e.gif", "https://i.pinimg.com/originals/5e/bb/5e/5ebb5e803ec0a35e951af81ce4f2c6e9.gif", "https://i.pinimg.com/originals/b4/aa/92/b4aa92bf0167bcdc15d46ec6263e5b4b.gif", "https://i.pinimg.com/originals/d1/68/f5/d168f5a6b980a04b8e617f76f1fb6b4e.gif", "https://media1.giphy.com/media/cmxs9js5FLQHCkgAT9/giphy.gif?cid=6c09b952xtaghwst7r3ker48c9hed71s92d07oe5lhms2wal&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g", "https://gifdb.com/images/thumbnail/monsters-inc-sulley-hugging-boo-cartoon-love-ngcn5wxuk3whgx0r.gif", "https://i.pinimg.com/originals/78/17/6f/78176fb004f35bff33dfb108d3f74c39.gif", "https://i.gifer.com/FMJM.gif", "https://media.tenor.com/QTyNY_dDPk4AAAAj/kissing-kiss.gif", "https://media.tenor.com/bXfH1p5lssUAAAAj/vida-amor.gif", "https://media.tenor.com/U0P4h3x9Z2IAAAAj/rocky7.gif", "https://webappstatic.buzzfeed.com/static/2020-04/20/23/asset/e611c392220b/anigif_sub-buzz-2799-1587424165-6.gif", "https://i.pinimg.com/originals/42/89/42/428942929326c43c7695f1c5be52136d.gif", "https://pa1.aminoapps.com/6750/2e2f78c0c37a8e6c862e905bae88a390efa1105e_00.gif", "https://gifdb.com/images/high/buenos-dias-mi-amor-butterfly-heart-0bt3j2y987wjztn1.gif", "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6uc7kf4KZnLKzrNjBwl_XgVsE86TovZzwnT2FKL3LS_oImlvgNhyphenhyphenZw_sp_owGp9K-8CZoVAFGSEr72139hcEXOO81a16xMGjYTrenNTd0zop51Hw6zRppNoPoY_-7MmtZJCN8bOiDOsY/s16000/gif-de-amor-te-quiero.gif", "https://i.pinimg.com/originals/1e/23/7d/1e237ded14fc9915f7b8ddc8ad087c46.gif", "https://i.gifer.com/KhSs.gif"]; // Agrega más rutas de imágenes si es necesario
+        
+        // Recorrer el array y crear imágenes
+        imagenes.forEach(function(imagen) {
+            var nuevaImagen = document.createElement("img");
+            nuevaImagen.src = imagen;
+            nuevaImagen.className = "imagen";
+            
+            // Establecer posiciones aleatorias
+            nuevaImagen.style.left = Math.random() * (window.innerWidth - 100) + "px"; // Ancho de la ventana - ancho de la imagen
+            nuevaImagen.style.top = Math.random() * (window.innerHeight - 100) + "px"; // Alto de la ventana - alto de la imagen
+            
+            document.body.appendChild(nuevaImagen); // Agregar imagen al cuerpo del documento
+        });
+    }
+
+    // Llamar a la función al cargar la página
+    window.onload = crearImagenesAleatorias;
+</script>
+
+<button onclick="location.href='ATMLEMGTDT3.html'" style="margin-top: 30px;">Oprime otra vez aquiii</button>
+
+</body>
+</html>
+
